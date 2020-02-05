@@ -44,7 +44,6 @@ const searchInput = document.getElementById('searchInput')
 const weatherResult = document.getElementById('temperature_value')
 const rainResult = document.getElementById('rain_value')
 
-
 weatherForm.addEventListener('submit', (e) => {
 	e.preventDefault()
 	const loc = searchInput.value
