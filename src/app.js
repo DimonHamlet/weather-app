@@ -30,7 +30,7 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/help/*', (req, res) => {
-    res.send('Help article was not found')
+    res.render('help')
 })
 
 app.get('/weather', (req, res) => {
