@@ -26,7 +26,7 @@ app.get('', (req, res) => {
 })
 
 app.get('/help', (req, res) => {
-    res.send('Help page')
+    res.render('help')
 })
 
 app.get('/help/*', (req, res) => {
