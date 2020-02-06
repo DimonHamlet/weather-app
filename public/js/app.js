@@ -47,7 +47,7 @@ const rainResult = document.getElementById('rain_value')
 weatherForm.addEventListener('submit', (e) => {
 	e.preventDefault()
 	const loc = searchInput.value
-	const url = 'http://localhost:3000/weather?address=' + loc
+	const url = '/weather?address=' + loc
 	weatherResult.textContent = '...'
 	fetch(url).then((response) => {
 	response.json().then((data) => {
